@@ -168,11 +168,6 @@ SUITESPARSE_VERSION = 5.7.2
             #   $(MKLROOT)/lib/intel64/libmkl_core.a \
             #   $(MKLROOT)/lib/intel64/libmkl_intel_thread.a \
             #   -Wl,--end-group -lpthread -lm
-            BLAS = \
-               $(MKLROOT)/lib/libmkl_intel_lp64.a \
-               $(MKLROOT)/lib/libmkl_core.a \
-               $(MKLROOT)/lib/libmkl_intel_thread.a \
-               -lpthread -lm
             # using dynamic linking:
             BLAS ?= -lmkl_intel_lp64 -lmkl_core -lmkl_intel_thread -liomp5 -lpthread -lm
             LAPACK ?=
