@@ -161,7 +161,7 @@ ifneq (,$(GPU_CONFIG))
 	( cd GPUQREngine && $(MAKE) static )
 endif
 	( cd SPQR && $(MAKE) static )
-	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' static )
+#	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' static )
 #	( cd PIRO_BAND && $(MAKE) static )
 #	( cd SKYLINE_SVD && $(MAKE) static )
 
